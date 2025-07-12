@@ -21,8 +21,8 @@
         "dev": "set NODE_ENV=development&& webpack",
         "prepublishOnly": "webpack",
         "test": "echo \"No tests exist.\" && exit 0",
-        "start": "expo start",
-        "reset-project": "expo start --clear"
+        "start": "npx expo start",
+        "reset-project": "npx expo start --clear"
     },
     "dependencies": {},
     "devDependencies": {
