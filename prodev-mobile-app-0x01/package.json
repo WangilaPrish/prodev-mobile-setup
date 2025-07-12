@@ -22,9 +22,7 @@
     "prepublishOnly": "webpack",
     "test": "echo \"No tests exist.\" && exit 0"
   },
-  "dependencies": {
-    "expo": "^53.0.19"
-  },
+  "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.1.2",
     "@babel/plugin-proposal-object-rest-spread": "^7.0.0",
