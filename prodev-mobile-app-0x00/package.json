@@ -23,7 +23,8 @@
     "test": "echo \"No tests exist.\" && exit 0"
   },
   "dependencies": {
-    "expo": "^53.0.19"
+    "expo": "^53.0.19",
+    "metro": "^0.80.1"
   },
   "devDependencies": {
     "@babel/core": "^7.1.2",
