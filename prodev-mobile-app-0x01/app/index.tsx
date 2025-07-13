@@ -1,6 +1,7 @@
-import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { View, Text, StyleSheet, ViewStyle, TextStyle } from 'react-native';
 
-export default function App() {
+const App: React.FC = () => {
     return (
         <View style={styles.container}>
             <Text>Entry Screen - Awesome</Text>
@@ -12,34 +13,43 @@ export default function App() {
             </View>
         </View>
     );
+};
+
+interface Styles {
+    container: ViewStyle;
+    largeText: TextStyle;
+    mediumText: TextStyle;
+    smallText: TextStyle;
 }
 
-const styles = StyleSheet.create({
+const styles = StyleSheet.create<Styles>({
     container: {
-        backgroundColor: "#90caf9",
+        backgroundColor: '#90caf9',
         flex: 1,
-        justifyContent: "center",
-        alignItems: "center",
+        justifyContent: 'center',
+        alignItems: 'center',
         padding: 20,
     },
     largeText: {
         fontSize: 30,
-        color: "#f44336",
+        color: '#f44336',
         marginBottom: 5,
-        fontWeight: "700",
-        fontVariant: ["small-caps"],
+        fontWeight: '700',
+        fontVariant: ['small-caps'],
     },
     mediumText: {
         fontSize: 20,
-        color: "#9c27b0",
+        color: '#9c27b0',
         marginBottom: 10,
-        fontWeight: "500",
-        textAlign: "right",
+        fontWeight: '500',
+        textAlign: 'right',
     },
     smallText: {
         fontSize: 15,
-        color: "#2196f3",
-        fontWeight: "400",
-        textAlign: "center",
+        color: '#2196f3',
+        fontWeight: '400',
+        textAlign: 'center',
     },
 });
+
+export default App;
