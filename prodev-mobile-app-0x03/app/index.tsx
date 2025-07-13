@@ -9,7 +9,7 @@ export default function Index() {
             <SafeAreaView style={styles.container}>
                 <View style={styles.navGroup}>
                     <Ionicons name="arrow-back" size={25} />
-                    <Image source={require('@/assets/images/logo.png')} />
+                    <Image source={require("../assets/images/logo.png")} />
                 </View>
                 <Text style={styles.largeText}>Sign in to your</Text>
                 <Text style={styles.largeText}>Account</Text>
@@ -37,47 +37,23 @@ export default function Index() {
                 </TouchableOpacity>
 
                 <View style={styles.dividerGroup}>
-                    <View
-                        style={styles.divider}
-                    ></View>
-                    <Text
-                        style={styles.dividerText}
-                    >
-                        OR
-                    </Text>
-                    <View
-                        style={styles.divider}
-                    ></View>
+                    <View style={styles.divider}></View>
+                    <Text style={styles.dividerText}>OR</Text>
+                    <View style={styles.divider}></View>
                 </View>
 
                 <View style={styles.socialMediaButtonGroup}>
                     <TouchableOpacity style={styles.socialMediaButton}>
-                        <View
-                            style={{
-                                flexDirection: "row",
-                                alignItems: "center",
-                                gap: 5,
-                            }}
-                        >
-                            <Image source={require("@/assets/images/google.png")} />
-                            <Text style={styles.socialMediaButtonText}>
-                                Continue with Google
-                            </Text>
+                        <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                            <Image source={require("../assets/images/google.png")} />
+                            <Text style={styles.socialMediaButtonText}>Continue with Google</Text>
                         </View>
                     </TouchableOpacity>
 
                     <TouchableOpacity style={styles.socialMediaButton}>
-                        <View
-                            style={{
-                                flexDirection: "row",
-                                alignItems: "center",
-                                gap: 5,
-                            }}
-                        >
-                            <Image source={require("@/assets/images/facebook.png")} />
-                            <Text style={styles.socialMediaButtonText}>
-                                Continue with Facebook
-                            </Text>
+                        <View style={{ flexDirection: "row", alignItems: "center", gap: 5 }}>
+                            <Image source={require("../assets/images/facebook.png")} />
+                            <Text style={styles.socialMediaButtonText}>Continue with Facebook</Text>
                         </View>
                     </TouchableOpacity>
                 </View>
