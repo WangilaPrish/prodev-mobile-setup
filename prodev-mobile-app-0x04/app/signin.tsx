@@ -11,7 +11,7 @@ export default function Index() {
         <SafeAreaProvider>
             <SafeAreaView style={styles.container}>
                 <View style={styles.navGroup}>
-                    <TouchableOpacity onPress={() => router.back()}>
+                    <TouchableOpacity onPress={() => router.push("/")}>
                         <Ionicons name="arrow-back" size={25} />
                     </TouchableOpacity>
                     <Image source={require("../assets/images/Logo.png")} />
